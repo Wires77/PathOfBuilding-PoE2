@@ -1,6 +1,6 @@
 # How to release Path of Building Community
 
-## Prerequisites
+## Prerequisites1
 
 ## Choosing a new version number
 
