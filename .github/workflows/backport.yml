@@ -4,6 +4,9 @@ on:
     pull_request:
         types: [closed]
 
+env:
+    LABEL_STRING: ${{ join(github.event.pull_request.labels.*.name, ',') }}
+
 jobs:
     backport:
         if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'pob1')
@@ -16,5 +19,5 @@ jobs:
                 token: ${{ secrets.WIRES77_PAT }}
                 repository: ${{ github.repository_owner }}/PathOfBuilding
                 event-type: port-changes
-                client-payload: '{"patch_url": "${{ github.event.pull_request.patch_url }}", "msg": "Apply changes from ${{ github.event.pull_request.html_url }}", "id": ${{ github.event.pull_request.number }}}'
+                client-payload: '{"author": "patch_url": "${{ github.event.pull_request.patch_url }}", "msg": "Apply changes from ${{ github.event.pull_request.html_url }}", "id": ${{ github.event.pull_request.number }}, "title": "${{ github.event.pull_request.title }}", "labels": "${{ github.env.LABEL_STRING }}"}'
 
