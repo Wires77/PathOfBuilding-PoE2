@@ -1,3 +1,7 @@
+VERSION[0.0.8][2025/04/14]
+--- Fixed Bugs ---
+* Restore negaaaaaative resist config (Wires77)
+
 VERSION[0.7.1][2025/04/09]
 
 --- Fixed Behaviours ---

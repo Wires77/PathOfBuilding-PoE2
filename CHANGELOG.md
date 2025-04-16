@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.0.8](https://github.com/PathOfBuildingCommunity/PathOfBuilding/tree/v0.0.8) (2025/04/14)
+
+[Full Changelog](https://github.com/Wires77/PathOfBuilding-PoE2/compare/v0.7.1...v0.0.8)
+
+## What's Changed
+### Fixed Bugs
+- Restore negaaaaaative resist config [\#1](https://github.com/Wires77/PathOfBuilding-PoE2/pull/1) ([Wires77](https://github.com/Wires77))
+
+
 ## [v0.7.1](https://github.com/PathOfBuildingCommunity/PathOfBuilding/tree/v0.7.1) (2025/04/09)
 
 [Full Changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/compare/v0.7.0...v0.7.1)
