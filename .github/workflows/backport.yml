@@ -18,5 +18,5 @@ jobs:
                 token: ${{ secrets.WIRES77_PAT }}
                 repository: ${{ github.repository_owner }}/PathOfBuilding
                 event-type: port-changes
-                client-payload: '{"author": "patch_url": "${{ github.event.pull_request.patch_url }}", "msg": "Apply changes from ${{ github.event.pull_request.html_url }}", "id": ${{ github.event.pull_request.number }}, "title": "${{ github.event.pull_request.title }}", "labels": "${{ env.LABEL_STRING }}", "name": "${{ github.event.pull_request.user.name }}", "user": "${{ github.event.pull_request.user.login }}"}'
+                client-payload: '{"patch_url": "${{ github.event.pull_request.patch_url }}", "msg": "Apply changes from ${{ github.event.pull_request.html_url }}", "id": ${{ github.event.pull_request.number }}, "title": "${{ github.event.pull_request.title }}", "labels": "${{ env.LABEL_STRING }}", "name": "${{ github.event.pull_request.user.name }}", "user": "${{ github.event.pull_request.user.login }}"}'
 
