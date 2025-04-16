@@ -6,9 +6,10 @@ on:
 
 jobs:
     backport:
-        if: github.event.pull_request.merged == 'true' && contains(github.event.pull_request.labels.*.name, 'pob1')
+        if: contains(github.event.pull_request.labels.*.name, 'pob1')
         runs-on: ubuntu-latest
         steps:
+            - run: echo ${{ github.event.pull_request.merged }}
             - name: Notify PathOfBuilding repo
               uses: peter-evans/repository-dispatch@v3
               with:
