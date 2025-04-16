@@ -6,7 +6,7 @@ on:
 
 jobs:
     backport:
-        if: github.event.pull_request.merged == 'true' && contains(github.event.pull_request.labels.*.name, 'pob1')
+        if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'pob1')
         runs-on: ubuntu-latest
         steps:
             - name: Notify PathOfBuilding repo
