@@ -703,6 +703,7 @@ for i, group in ipairs(psg.groups) do
 			end
 			--printf("Passive skill " .. passiveRow.Name .. "(id: " .. passiveRow.Id .. ") found")
 			node["name"] = escapeGGGString(passiveRow.Name)
+			node["id"] = passiveRow.Id
 			node["icon"] = passiveRow.Icon
 			if passiveRow.FlavourText ~= "" then
 				node["flavourText"] = passiveRow.FlavourText:gsub('\r',''):gsub('\n','\\n')
